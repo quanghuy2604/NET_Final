@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Advance Search";
+    Layout = "~/Views/Shared/Layout_Sanpham.cshtml";
+}
+
+<h2>Search product by prize</h2>
+<div class="container">
+    <input type="text" id="txtTen" placeholder="Name products" />
+    Prize from <input type="number" min="0" id="txtGiaTu" placeholder="0" />
+    to <input type="number" min="0" id="txtGiaDen"placeholder="100000000" />
+    <input type="button" id="btnTim" value="Find" />
+
+
+    <h2>Kết quả</h2>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Num.</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Prize</th>
+                <th>Discount</th>
+                <th>Brand</th>
+            </tr>
+        </thead>
+        <tbody id="content"></tbody>
+    </table>
+</div>
+@section Scripts{
+    <script>
+        $("#btnTim").click(function () {
+            var ten = $("#txtTen").val().trim();
+            var giaTu = $("#txtGiaTu").val();
+            var giaDen = $("#txtGiaDen").val();
+            $.ajax({
+                url: "/TrangChus/JSONSearch",
+                type: "GET",
+                data: {
+                    "Name": ten, "From": giaTu, "To": giaDen
+                },
+                success: function (data) {
+                    //console.log(data);
+                    $("#content").html("");
+                    //duyệt qua từng phần tử của tập kết quả
+                    $(data).each(function (index, value) {
+                        //tạo thẻ tr
+                        var tr = $("<tr />");
+                        //tạo nội dung cho thẻ tr
+                        $("<td/>").html(index + 1).appendTo(tr);
+                        $("<td/>").html
+                            (
+                                '<a href="@Context.Request.Scheme://@Context.Request.Host/' + value.maHH + '/' + value.tenHH + '" >'
+                                    + value.tenHH + 
+                                '</a>'
+                            ).appendTo(tr);
+                        $("<td/>").html
+                            (
+                                '<a href="@Context.Request.Scheme://@Context.Request.Host/' + value.maHH + '/' + value.tenHH + '" >'
+                                    + '<img src="/Hinh/' + value.hinh + '" width="100" height="100"/>' +
+                                '</a>'
+                            ).appendTo(tr);
+                        $("<td/>").html(value.donGia + "USD").appendTo(tr);
+                        $("<td/>").html(value.giamGia + "%").appendTo(tr);
+                        $("<td/>").html(value.loai).appendTo(tr);
+                        //thêm vào tbody
+                        tr.appendTo("#content");
+                    });
+                }
+            });
+        });
+    </script>
+    }
