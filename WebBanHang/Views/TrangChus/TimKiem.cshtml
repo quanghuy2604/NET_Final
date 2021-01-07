@@ -50,13 +50,13 @@
                         $("<td/>").html(index + 1).appendTo(tr);
                         $("<td/>").html
                             (
-                                '<a href="@Context.Request.Scheme://@Context.Request.Host/' + value.maHH + '/' + value.tenHH + '" >'
+                                '<a href="@Context.Request.Scheme://@Context.Request.Host/id-' + value.maHH + '/' + value.tenHH + '" >'
                                     + value.tenHH + 
                                 '</a>'
                             ).appendTo(tr);
                         $("<td/>").html
                             (
-                                '<a href="@Context.Request.Scheme://@Context.Request.Host/' + value.maHH + '/' + value.tenHH + '" >'
+                                '<a href="@Context.Request.Scheme://@Context.Request.Host/id-' + value.maHH + '/' + value.tenHH + '" >'
                                     + '<img src="/Hinh/' + value.hinh + '" width="100" height="100"/>' +
                                 '</a>'
                             ).appendTo(tr);

@@ -122,8 +122,6 @@ namespace WebBanHang.Controllers
             return View();
         }
 
-        
-        
         public async Task<IActionResult> Showsp(int? maloai, string tenloai)
         {
             var model = await _context.loais.ToListAsync();
@@ -147,7 +145,7 @@ namespace WebBanHang.Controllers
 
             if (!string.Equals(friendlyTitle, tenloai, StringComparison.Ordinal))
             {
-                return RedirectToRoutePermanent("showsp", new {maloai,tenloai = friendlyTitle });
+                return RedirectToRoutePermanent("showsp", new { maloai, tenloai = friendlyTitle });
             }
 
 
@@ -155,7 +153,7 @@ namespace WebBanHang.Controllers
 
         }
 
-        //[Route("showspdetail")]
+        
         public async Task<IActionResult> Details(int? mahh, string tenhh, int page=1 )
         {
             var model = _context.loais.ToList();
@@ -190,7 +188,7 @@ namespace WebBanHang.Controllers
 
             if (!string.Equals(friendlyTitle, tenhh, StringComparison.Ordinal))
             {
-                return RedirectToRoutePermanent("showspdetail", new {mahh,tenhh = friendlyTitle});
+                return RedirectToRoutePermanent("showspdetail", new { mahh, tenhh = friendlyTitle});
             }
 
             return View(hangHoa);

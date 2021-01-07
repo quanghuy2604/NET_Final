@@ -8,7 +8,7 @@
     Layout = "~/Views/Shared/Components/_AdminPage.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Products</h2>
 <nav aria-label="Products Paging">
     @await this.Component.InvokeAsync("Pager",new {pagingList= this.Model })
 </nav>
@@ -66,10 +66,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NgayDang)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaHH">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaHH">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaHH">Delete</a>
+            <td style='font-size:24px'>
+                <a asp-action="Edit" asp-route-id="@item.MaHH"><i class="fa fa-edit"></a> |
+                <a asp-action="Details" asp-route-id="@item.MaHH"><i class="fa fa-align-left"></a> |
+                <a asp-action="Delete" asp-route-id="@item.MaHH"><i class="fa fa-trash-o"></a>
             </td>
         </tr>
 }

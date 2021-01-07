@@ -29,9 +29,8 @@ namespace WebBanHang.Controllers
         {
             return View();
         }
-        [Route("admin")]
+
         [AllowAnonymous]
-        
         public IActionResult Profile()
         {
             if (!User.Identity.IsAuthenticated)

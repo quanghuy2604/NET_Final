@@ -7,10 +7,8 @@
     Layout = "~/Views/Shared/Components/_AdminPage.cshtml";
 }
 
+<h2>Brand</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -27,10 +25,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.TenLoai)
                 </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.MaLoai">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.MaLoai">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.MaLoai">Delete</a>
+                <td style='font-size:24px'>
+                    <a asp-action="Edit" asp-route-id="@item.MaLoai"><i class="fa fa-edit"></a> |
+                    <a asp-action="Details" asp-route-id="@item.MaLoai"><i class="fa fa-align-left"></a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaLoai"><i class="fa fa-trash-o"></a>
                 </td>
             </tr>
         }

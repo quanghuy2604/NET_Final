@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TN\\Downloads\\NET_final\\WebBanHang\\WebBanHang.csproj": {}
+    "C:\\Users\\TN\\Documents\\LaptopShop\\WebBanHang\\WebBanHang.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TN\\Downloads\\NET_final\\WebBanHang\\WebBanHang.csproj": {
+    "C:\\Users\\TN\\Documents\\LaptopShop\\WebBanHang\\WebBanHang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TN\\Downloads\\NET_final\\WebBanHang\\WebBanHang.csproj",
+        "projectUniqueName": "C:\\Users\\TN\\Documents\\LaptopShop\\WebBanHang\\WebBanHang.csproj",
         "projectName": "WebBanHang",
-        "projectPath": "C:\\Users\\TN\\Downloads\\NET_final\\WebBanHang\\WebBanHang.csproj",
+        "projectPath": "C:\\Users\\TN\\Documents\\LaptopShop\\WebBanHang\\WebBanHang.csproj",
         "packagesPath": "C:\\Users\\TN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TN\\Downloads\\NET_final\\WebBanHang\\obj\\",
+        "outputPath": "C:\\Users\\TN\\Documents\\LaptopShop\\WebBanHang\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

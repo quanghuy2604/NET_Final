@@ -189,13 +189,13 @@ namespace WebBanHang
 
                 routes.MapRoute(
                     name: "showsp",
-                    template: "{tenloai}",
+                    template: "brand-{maloai}-{tenloai}",
                     defaults: new { controller = "TrangChus", action = "Showsp" }
                 );
 
                 routes.MapRoute(
                     name: "showspdetail",
-                    template: "Details/{tenhh}",
+                    template: "id-{mahh}/{tenhh}",
                     defaults: new { controller = "TrangChus", action = "Details" }
                 );
 

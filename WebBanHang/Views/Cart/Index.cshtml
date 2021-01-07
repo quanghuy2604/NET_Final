@@ -7,7 +7,7 @@
 
 <div id="page-content" class="single-page">
     <div class="container">
-        <h2>Giỏ hàng</h2>
+        <h2>Cart</h2>
         @using (Html.BeginForm("Update", "Cart", FormMethod.Post))
         {
           
@@ -22,10 +22,10 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="caption">
-                                    <div class="name"><h3><a asp-action="Details" asp-controller="TrangChus" asp-route-mahh="@item.Product.MaHH" asp-route-tenhh="@item.Product.TenHH">@item.Product.TenHH</a></h3></div>
+                                    <div class="name"><h3><a asp-action="Details" asp-controller="TrangChus" asp-route-mahh="@item.Product.MaHH" >@item.Product.TenHH</a></h3></div>
 
-                                    <div>@item.Product.DonGia $</div>
-                                    <div>Discount :<span>@item.Product.GiamGia %</span></div>
+                                    <div>@item.Product.DonGia $<span>@item.Product.GiamGia%</span></div>
+                                    <div>Discount :<span>@item.Product.GiamGia%</span></div>
                                     <label>Số lượng: </label> <input name="quantity" class="form-inline quantity" type="number" value="@item.Quantity" asp-route-id="@item.Product.MaHH">
                                     <hr>
                                     <a asp-action="remove" asp-controller="cart" asp-route-id="@item.Product.MaHH" class="btn btn-danger">Remove</a>

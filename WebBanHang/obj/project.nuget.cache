@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pusXrgUnUabarBJ8GOjAcZ698mQW98sz0OIlXoEuU7jKIYz12W2uDxEweJQzHDF0DZUORodaHuI36puEIW7XkA==",
+  "dgSpecHash": "++VJFAyTvR293wLrZLyj+9iLadyM4w/IABh0VX2pOfF6IuY+SpbmBC2oUVwpDONgCj68ATmOHM0NgS1bvzSe2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TN\\Downloads\\NET_final\\WebBanHang\\WebBanHang.csproj",
+  "projectFilePath": "C:\\Users\\TN\\Documents\\LaptopShop\\WebBanHang\\WebBanHang.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TN\\.nuget\\packages\\braintreehttp-dotnet\\0.3.0\\braintreehttp-dotnet.0.3.0.nupkg.sha512",
     "C:\\Users\\TN\\.nuget\\packages\\jquery\\1.4.4\\jquery.1.4.4.nupkg.sha512",

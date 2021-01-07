@@ -124,7 +124,7 @@ namespace WebBanHang.Controllers
                 return NotFound();
             }
             ViewData["MaLoai"] = new SelectList(_context.loais, "MaLoai", "TenLoai", hangHoa.MaLoai);
-            return RedirectToAction("Index");
+            return View(hangHoa);
         }
 
         // POST: HangHoas/Edit/5

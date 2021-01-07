@@ -17,11 +17,11 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="~/css/bootstrap.min.css" type="text/css">
-
+    <link rel="shortcut icon" href="~/img/icon.png" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/style.css">
 
-    <link rel="shortcut icon" href="~/img/icon.png" />
+
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="~/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="~/fonts/font-slider.css" type="text/css">
@@ -110,11 +110,7 @@
             </div>
 
             <div class="col-md-4">
-                @if (ViewBag.quantity == null)
-                {
-                    ViewBag.quantity = 0;
-                }
-                <div id="cart"><a class="btn btn-1" asp-action="index" asp-controller="cart"><span class="glyphicon glyphicon-shopping-cart"></span>@ViewBag.quantity </a></div>
+                <div id="cart"><a class="btn btn-1" asp-action="index" asp-controller="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Shopping cart </a></div>
             </div>
         </div>
         
