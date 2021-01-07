@@ -19,13 +19,13 @@
                     {
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="product" style="width:270px;height:280px">
-                                <div class="image" style="width:180px; height:180px">
-                                    <a asp-action="Details" asp-route-mahh="@item.MaHH"> <img src="~/Hinh/@item.Hinh" style="width:180px; height:180px" alt="@item.Loai.TenLoai Product @item.MaHH"/></a>
+                                <div class="image" >
+                                    <a asp-action="Details" asp-route-mahh="@item.MaHH"> <img src="~/Hinh/@item.Hinh"  width="250" height="250" alt="@item.Loai.TenLoai Product @item.MaHH" /></a>
                                 </div>
 
 
                                 <div>
-                                    <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span class="glyphicon glyphicon-shopping-cart">Add to cart</span></a>
+                                    <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span style="font-size:24px" class="glyphicon glyphicon-shopping-cart">Buy</span></a>
                                 </div>
                                 <div class="caption">
                                     <div class="name"><h3 style="font-size:16px"><a>  @Html.DisplayFor(modelItem => item.TenHH)</a></h3></div>

@@ -8,29 +8,30 @@
 }
 
 <h2>Brand</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Brand name
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div class="container">
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TenLoai)
-                </td>
-                <td style='font-size:24px'>
-                    <a asp-action="Edit" asp-route-id="@item.MaLoai"><i class="fa fa-edit"></a> |
-                    <a asp-action="Details" asp-route-id="@item.MaLoai"><i class="fa fa-align-left"></a> |
-                    <a asp-action="Delete" asp-route-id="@item.MaLoai"><i class="fa fa-trash-o"></a>
-                </td>
+                <th>
+                    Brand name
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenLoai)
+                    </td>
+                    <td style='font-size:24px'>
+                        <a asp-action="Edit" asp-route-id="@item.MaLoai"><i class="fa fa-edit"></a> |
+                        <a asp-action="Details" asp-route-id="@item.MaLoai"><i class="fa fa-align-left"></a> |
+                        <a asp-action="Delete" asp-route-id="@item.MaLoai"><i class="fa fa-trash-o"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

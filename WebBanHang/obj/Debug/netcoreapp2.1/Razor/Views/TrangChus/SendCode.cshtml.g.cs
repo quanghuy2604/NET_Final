@@ -63,7 +63,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n<div id=\"page-content\" class=\"single-page\">\r\n    <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-6\">\r\n                <div class=\"heading\"><h2>Send Verification Code</h2></div>\r\n                ");
             EndContext();
             BeginContext(326, 227, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3a4e8c51253488eb96b55c113edd6a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff7dc718ecac41d3ba807c07bbade621", async() => {
                 BeginContext(368, 178, true);
                 WriteLiteral("\r\n                    <div class=\"form-group\">\r\n                        <input type=\"submit\" value=\"Send\" class=\"btn btn-default\" />\r\n                    </div>\r\n                ");
                 EndContext();

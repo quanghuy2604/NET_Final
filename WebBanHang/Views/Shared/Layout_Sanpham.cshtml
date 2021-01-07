@@ -82,7 +82,7 @@
                             {
                                 <li>
                                     <a asp-controller="Admin" asp-action="Profile">
-                                        Xin chào,
+                                        Hello ,
                                         <b>@User.Identity.Name</b>
                                     </a>
                                 </li>
@@ -102,22 +102,24 @@
     <!--Header-->
     <header class="container">
         <div class="row">
-            <div class="col-md-4">
-               
-            </div>
-            <div class="col-md-4">
+            
+            <div class="col-md-8">
                 <form class="form-search">
                     <input type="text" class="input-medium search-query" name="query">
-                    <button type="submit" class="btn" asp-action="Search" asp-controller="TrangChus"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="submit" class="btn btn-primary" asp-action="Search" asp-controller="TrangChus"><span style="font-size:large" class="glyphicon glyphicon-search"></span></button>
                 </form>
             </div>
             <div class="col-md-4">
-                <div id="cart"><a class="btn btn-1" asp-action="index" asp-controller="cart"><span class="glyphicon glyphicon-shopping-cart"></span>@ViewBag.quantity</a></div>
+                @if (ViewBag.quantity == null)
+                {
+                    ViewBag.quantity = 0;
+                }
+                <div id="cart"><a class="btn btn-success" asp-action="index" asp-controller="cart"><span style="font-size:36px" class="glyphicon glyphicon-shopping-cart"><sup>@ViewBag.quantity</sup></span>  </a></div>
             </div>
         </div>
     </header>
     <!--Navigation-->
-    <nav id="menu" class="navbar">
+    <nav id="menu" class="navbar"  style="background-color:#ff6666">
         <div class="container">
             <div class="navbar-header">
                 <span id="heading" class="visible-xs">Categories</span>
@@ -218,7 +220,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    Yéni Shop - From 2020
+                    Yéni Shop - From 2020s 
                 </div>
                 <div class="col-md-6">
                     <div class="pull-right">

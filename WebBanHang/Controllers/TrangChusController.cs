@@ -23,6 +23,9 @@ using Contact = WebBanHang.Models.Contact;
 using MailChimp.Net;
 using Microsoft.Extensions.Configuration;
 
+using Item = WebBanHang.Models.Item;
+using item = PayPal.v1.Payments.Item;
+
 namespace WebBanHang.Controllers
 {
     public class TrangChusController : Controller
@@ -61,6 +64,16 @@ namespace WebBanHang.Controllers
 
         public async Task<IActionResult> Index(int page=1)
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
+           
             var query = _context.HangHoas.AsNoTracking().OrderByDescending(p => p.NgayDang);
             var models = await PagingList.CreateAsync(query, 4, page);
             var model = _context.loais.ToList();
@@ -70,14 +83,23 @@ namespace WebBanHang.Controllers
             var model3 = _context.HangHoas.AsNoTracking().OrderByDescending(p => p.DaMua);
             var model3s = await PagingList.CreateAsync(model3, 4, page);
             ViewBag.model3s = model3s;
-
             
+
 
             return View(models);
         }
 
         public IActionResult showbaiviet()
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
@@ -89,6 +111,15 @@ namespace WebBanHang.Controllers
 
         public IActionResult GioiThieu()
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
@@ -97,6 +128,15 @@ namespace WebBanHang.Controllers
 
         public IActionResult DieuKhoan()
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
@@ -105,6 +145,15 @@ namespace WebBanHang.Controllers
 
         public IActionResult ChinhSach()
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
@@ -115,6 +164,15 @@ namespace WebBanHang.Controllers
         //[Route("lien-he")]
         public IActionResult Contact()
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
@@ -126,8 +184,16 @@ namespace WebBanHang.Controllers
         {
             var model = await _context.loais.ToListAsync();
             ViewBag.model = model;
-
-            if(maloai == null)
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
+            if (maloai == null)
             {
                 return NotFound();
             }
@@ -202,6 +268,15 @@ namespace WebBanHang.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Contact([Bind("ID,Name,Email,Phone,NoiDung")] Contact contact)
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             var model = _context.loais.ToList();
             ViewBag.model = model;
             if (ModelState.IsValid)

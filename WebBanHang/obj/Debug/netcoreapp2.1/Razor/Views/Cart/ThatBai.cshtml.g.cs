@@ -62,7 +62,7 @@ using WebBanHang.Models;
             WriteLiteral("<div class=\"container\">\r\n    <br />\r\n    <h2>Payment false</h2>\r\n    <br />\r\n    <br />\r\n    </div>\r\n    ");
             EndContext();
             BeginContext(207, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "426c81f9ec554b6faebc819661c15823", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "488142353b9041459365dd0f86910c54", async() => {
                 BeginContext(256, 12, true);
                 WriteLiteral("Back to Shop");
                 EndContext();

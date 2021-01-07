@@ -104,7 +104,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(645, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7dd7566e16340bab13a2def22741da8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "186c105de70540cab93af59ec24b7026", async() => {
                 BeginContext(735, 8, true);
                 WriteLiteral("[Change]");
                 EndContext();
@@ -129,7 +129,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                    </dd>\r\n                    <dt>\r\n                        Password:\r\n                    </dt>\r\n                    <dd>\r\n                        ");
             EndContext();
             BeginContext(914, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5269b7501b2c425ba76fb3f6cd7650a2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a01a075c7d2b40a7a9c3acb634151f84", async() => {
                 BeginContext(1007, 8, true);
                 WriteLiteral("[Change]");
                 EndContext();
@@ -173,7 +173,7 @@ using WebBanHang.Models;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(1334, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a43f7a792ef43508c892d3f04fbe895", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e30a96b9e7aa42df830446992a7970fb", async() => {
                 BeginContext(1427, 8, true);
                 WriteLiteral("[Change]");
                 EndContext();
@@ -198,7 +198,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                            ");
             EndContext();
             BeginContext(1469, 209, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "233523fbe56549d598caf4078ac1b433", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b469fa37feb4ffd89b973a46d90b58b", async() => {
                 BeginContext(1551, 120, true);
                 WriteLiteral("\r\n                                <button type=\"submit\" class=\"btn-link\">[Remove]</button>\r\n                            ");
                 EndContext();
@@ -236,7 +236,7 @@ using WebBanHang.Models;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(1792, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3b4a9350b65457fa9d726861e3616ea", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6aa7894ac462484f82d98f22f3c2c417", async() => {
                 BeginContext(1885, 5, true);
                 WriteLiteral("[Add]");
                 EndContext();
@@ -278,7 +278,7 @@ using WebBanHang.Models;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(2190, 269, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04241f70733243068d1cd4621f3920ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a644d86f2d2e43e5b1eb1eceeac66788", async() => {
                 BeginContext(2309, 143, true);
                 WriteLiteral("\r\n                                Enabled <button type=\"submit\" class=\"btn-link btn-bracketed\">[Disable]</button>\r\n                            ");
                 EndContext();
@@ -318,7 +318,7 @@ using WebBanHang.Models;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(2575, 268, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea6394b2c3c1416ab243f7f58ec289db", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2de11b8956cd4315813f489d5db42f50", async() => {
                 BeginContext(2693, 143, true);
                 WriteLiteral("\r\n                                <button type=\"submit\" class=\"btn-link btn-bracketed\">[Enable]</button> Disabled\r\n                            ");
                 EndContext();
@@ -370,7 +370,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                    </dd>\r\n                    <dt>\r\n                        Bill order : \r\n                    </dt>\r\n                    <dd>\r\n                        ");
             EndContext();
             BeginContext(3279, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "876facf529b4477eb0263cb8a9a7be5b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b8df9dcc62a49fda9a5fa2384acc987", async() => {
                 BeginContext(3329, 13, true);
                 WriteLiteral(" Bill History");
                 EndContext();

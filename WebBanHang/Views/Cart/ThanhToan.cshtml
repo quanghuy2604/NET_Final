@@ -13,7 +13,7 @@
 
 
 <div class="container">
-    <div class="heading"><h2>Customer Infomation</h2></div>
+    <div class="heading"><h2>Payment Information</h2></div>
     <form name="form2" id="ff2" method="post" action="register.php">
         <div class="form-group">
             <input name="shipName" class="form-control" placeholder="Name :" required>
@@ -30,16 +30,22 @@
                 <a asp-controller="ManageAccount" asp-action="ManageAccount" class="btn-link btn-bracketed">[Go to Manage Acccount]</a>
             }
         </div>
-
         <span class="text-danger">@ViewBag.NoPhoneNumber</span><br /><br />
-        <button type="submit" class="btn btn-1">Thanh toán</button>
-        <a asp-action="ThanhToanVnPay">
-            <img src="~/Hinh/vn-pay.jpg" alt="Check out with VNPay" width="150" />
-        </a>
-        <a asp-action="ThanhToanPaypal">
-            <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" />
-        </a>
+        <button type="submit" class="btn btn-success" style="font-size:30px">Confirm</button>
+        <br />
+        <br />
+        <br />
+        <br />
 
+        <h4>Select another payment method</h4>
+        <div style="margin:10px">
+            <a asp-action="ThanhToanVnPay">
+                <img src="~/Hinh/vn-pay.jpg" alt="Check out with VNPay" width="150" />
+            </a>
+            <a asp-action="ThanhToanPaypal">
+                <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" />
+            </a>
+        </div>
         <br />
         <br />
         <br />

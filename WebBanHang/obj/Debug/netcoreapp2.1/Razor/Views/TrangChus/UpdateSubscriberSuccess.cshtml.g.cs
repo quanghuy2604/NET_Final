@@ -62,7 +62,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n<br />\r\n<h2>Update Success</h2>\r\n<br />\r\n<br />\r\n");
             EndContext();
             BeginContext(161, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7e71953751e45fe96741c35f01ca020", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2dc6b446b6c04f4aa5105705768ce651", async() => {
                 BeginContext(210, 12, true);
                 WriteLiteral("Back to Shop");
                 EndContext();

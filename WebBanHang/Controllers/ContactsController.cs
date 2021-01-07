@@ -24,6 +24,16 @@ namespace WebBanHang.Controllers
         // GET: Contacts
         public async Task<IActionResult> Index()
         {
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
+
             if (User.Identity.Name != admin)
             {
                 return RedirectToAction("Index", "TrangChus");

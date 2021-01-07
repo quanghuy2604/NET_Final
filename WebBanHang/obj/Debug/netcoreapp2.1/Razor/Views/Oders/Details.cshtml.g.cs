@@ -347,7 +347,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(2923, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "acbcf213555f498aa4714ce18242a063", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0211e998ac284179a2b47e6ecac47fb2", async() => {
                 BeginContext(2999, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -402,7 +402,7 @@ using WebBanHang.Models;
             WriteLiteral(" USD</h3>\r\n\r\n        </div>\r\n    </div>\r\n</div>\r\n    <div>\r\n        ");
             EndContext();
             BeginContext(3294, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa2a17aa43fa46628c2afd405e31ad1e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0aad30a6ac3b426899392ae4ec83f1d5", async() => {
                 BeginContext(3340, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -437,7 +437,7 @@ using WebBanHang.Models;
             WriteLiteral(" |\r\n        ");
             EndContext();
             BeginContext(3360, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ebe47d215cd4954b54b78091ac8876b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95726aebca0244df9174ba6dab666db8", async() => {
                 BeginContext(3382, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

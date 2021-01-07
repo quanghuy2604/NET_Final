@@ -72,7 +72,7 @@ using WebBanHang.Models;
             WriteLiteral("                        <li> ");
             EndContext();
             BeginContext(493, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a00b22567c145b28aa2685489d441cd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c58f3bdedfb43bcb1547a7bd0ebae1c", async() => {
                 BeginContext(545, 2, true);
                 WriteLiteral("  ");
                 EndContext();

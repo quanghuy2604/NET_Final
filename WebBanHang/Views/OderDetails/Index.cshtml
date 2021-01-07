@@ -10,50 +10,53 @@
 <nav aria-label="Order Paging">
     @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
 </nav>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Id
-            </th>
-            <th>
-                Quantity
-            </th>
-            <th>
-Gia            </th>
-            <th>
-              Product code
-            </th>
-            <th>
-                OderId
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-               @item.ID
-            <td>
-                @item.Quantity
-            </td>
-            <td>
-                @item.Gia
-            </td>
-            <td>
-                @item.MaHH
-            </td>
-            <td>
-                @item.OderID
-            </td>
-            <td style='font-size:24px'>
-                <a asp-action="Edit" asp-route-id="@item.ID"><i class="fa fa-edit"></a> |
-                <a asp-action="Details" asp-route-id="@item.ID"><i class="fa fa-align-left"></a> |
-                <a asp-action="Delete" asp-route-id="@item.ID"><i class="fa fa-trash-o"></a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Gia
+                </th>
+                <th>
+                    Product code
+                </th>
+                <th>
+                    OderId
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.ID
+                    <td>
+                        @item.Quantity
+                    </td>
+                    <td>
+                        @item.Gia
+                    </td>
+                    <td>
+                        @item.MaHH
+                    </td>
+                    <td>
+                        @item.OderID
+                    </td>
+                    <td style='font-size:24px'>
+                        <a asp-action="Edit" asp-route-id="@item.ID"><i class="fa fa-edit"></a> |
+                        <a asp-action="Details" asp-route-id="@item.ID"><i class="fa fa-align-left"></a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID"><i class="fa fa-trash-o"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

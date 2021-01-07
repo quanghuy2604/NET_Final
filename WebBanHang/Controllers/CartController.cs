@@ -92,7 +92,7 @@ namespace WebBanHang.Controllers
             {
                 return View("View");
             }
-            else
+            
             ViewBag.cart = cart;
             ViewBag.gia = cart.Sum(item => (item.Product.DonGia * item.Quantity));
             ViewBag.giamgia = cart.Sum(x => (x.Product.GiamGia * (x.Product.DonGia * x.Quantity)) / 100);
@@ -128,7 +128,7 @@ namespace WebBanHang.Controllers
                 SessionHelper.Set(HttpContext.Session, "cart", cart);
             }
 
-            return RedirectToAction("Index","Trangchus");
+            return RedirectToAction("Index");
         }
 
         [Route("buy-detail/{id}")]
