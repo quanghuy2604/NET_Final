@@ -7,7 +7,9 @@
     Layout = "~/Views/Shared/Layout_Sanpham.cshtml";
 }
 <h5>Order history , ID cutomer : @ViewBag.id </h5>
-
+<nav aria-label="Order Paging">
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+</nav>
 <div class="container">
     <table class="table">
         <thead>

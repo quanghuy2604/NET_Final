@@ -82,12 +82,12 @@ using WebBanHang.Models;
             WriteLiteral("                        <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\r\n                            <div class=\"product\" style=\"width:270px;height:280px\">\r\n                                <div class=\"image\" >\r\n                                    ");
             EndContext();
             BeginContext(705, 158, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97f70a4d5a25402f856dc771345b7c1b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aeabfea1ad154cb28a93988fff619fb9", async() => {
                 BeginContext(757, 1, true);
                 WriteLiteral(" ");
                 EndContext();
                 BeginContext(758, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4d1717638cf54e5e89e8deb27ec4f919", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "10ed8504ca914e03aded30927c2522cd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -154,7 +154,7 @@ AddHtmlAttributeValue(" ", 844, item.MaHH, 845, 10, false);
             WriteLiteral("\r\n                                </div>\r\n\r\n\r\n                                <div>\r\n                                    ");
             EndContext();
             BeginContext(984, 177, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e122abf691c4c34a536d55de0912b88", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c272fee019a14534ba60209361c6fe43", async() => {
                 BeginContext(1076, 81, true);
                 WriteLiteral("<span style=\"font-size:24px\" class=\"glyphicon glyphicon-shopping-cart\">Buy</span>");
                 EndContext();

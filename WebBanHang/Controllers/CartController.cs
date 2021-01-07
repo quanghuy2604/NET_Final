@@ -45,6 +45,8 @@ namespace WebBanHang.Controllers
         private readonly IVnPayLibrary _vnPayLibrary;
 
         public double tyGiaUSD = 1.0;
+        public double tyGiaVND = 23300;
+
         public CartController(
             MyDBContext context, 
             UserManager<AppUser> userManager, 
@@ -565,6 +567,7 @@ namespace WebBanHang.Controllers
 
             var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
             var subTotal = cart.Sum(item => (item.Product.DonGia - item.Product.DonGia * item.Product.GiamGia / 100) * item.Quantity );
+            subTotal = subTotal * tyGiaVND;
             oder.Total = Math.Round(subTotal);
 
             try

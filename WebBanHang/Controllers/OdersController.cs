@@ -36,13 +36,13 @@ namespace WebBanHang.Controllers
             return View(model);
         }
         [AllowAnonymous]
-        public async Task<IActionResult> OrderHistory(string idcustomer )
+        public async Task<IActionResult> OrderHistory(string idcustomer,int page = 1 )
         {
             var modelb = _context.loais.ToList();
             ViewBag.model = modelb;
             ViewBag.id = idcustomer;
             var query = _context.Oders.AsNoTracking().OrderBy(p => p.CustomerID==idcustomer);
-            var model = await PagingList.CreateAsync(query, 10, 1);
+            var model = await PagingList.CreateAsync(query, 10, page);
             return View(model);
         }
         [AllowAnonymous]
