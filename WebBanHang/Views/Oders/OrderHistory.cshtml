@@ -1,15 +1,13 @@
-﻿@model IEnumerable<WebBanHang.Models.Oder>
-
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<WebBanHang.Models.Oder>
 @{
-    ViewData["Title"] = "Order";
-    Layout = "~/Views/Shared/Components/_AdminPage.cshtml";
-    //Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Oder History";
+    Layout = "~/Views/Shared/Layout_Sanpham.cshtml";
 }
+<h5>Order history , ID cutomer : @ViewBag.id </h5>
 
-<h2>Order</h2>
-<nav aria-label="Order Paging">
-    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
-</nav>
 <div class="container">
     <table class="table">
         <thead>
@@ -65,9 +63,7 @@
                         @Html.DisplayFor(modelItem => item.Total)
                     </td>
                     <td style='font-size:24px'>
-                        <a asp-action="Edit" asp-route-id="@item.ID"><i class="fa fa-edit"></a> |
                         <a asp-action="Details" asp-route-id="@item.ID"><i class="fa fa-align-left"></a> |
-                        <a asp-action="Delete" asp-route-id="@item.ID"><i class="fa fa-trash-o"></a>
                     </td>
                 </tr>
             }
