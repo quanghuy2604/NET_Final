@@ -2,11 +2,10 @@
 
 @{
     ViewData["Title"] = "Order";
-    Layout = ViewBag.ren;
-    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/Components/_AdminPage.cshtml";
 }
 
-<h2>Order</h2>
+<h2>Page Order admin</h2>
 <nav aria-label="Order Paging">
     @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
 </nav>
@@ -62,11 +61,11 @@
                         @Html.DisplayFor(modelItem => item.CreatedDate)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Total)
+                        @Html.DisplayFor(modelItem => item.Total) $
                     </td>
                     <td style='font-size:24px'>
                        
-                        <a asp-action="Details" asp-route-id="@item.ID" asp-rout-ren="Admin"><i class="fa fa-align-left"></a>
+                        <a asp-action="Details" asp-route-id="@item.ID" ><i class="fa fa-align-left"></a>
                     </td>
                 </tr>
             }

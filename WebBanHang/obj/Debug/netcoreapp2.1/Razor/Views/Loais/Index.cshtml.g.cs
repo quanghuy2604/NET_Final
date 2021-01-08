@@ -101,7 +101,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                    </td>\r\n                    <td style=\'font-size:24px\'>\r\n                        ");
             EndContext();
             BeginContext(689, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f81456342e244ab867e09a2fc4a0533", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e41f2f867114bc6b64098a812e7c617", async() => {
                 BeginContext(738, 22, true);
                 WriteLiteral("<i class=\"fa fa-edit\">");
                 EndContext();
@@ -136,7 +136,7 @@ using WebBanHang.Models;
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(792, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74d6d3f241104a8ca9eead7fe978ad22", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62e5a3eb5eb94664b4b8add8a8ff0308", async() => {
                 BeginContext(844, 28, true);
                 WriteLiteral("<i class=\"fa fa-align-left\">");
                 EndContext();
@@ -171,7 +171,7 @@ using WebBanHang.Models;
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(904, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "758013ed6e9349799953985556092716", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f88096debcfa4a428f575d82c59984cd", async() => {
                 BeginContext(955, 25, true);
                 WriteLiteral("<i class=\"fa fa-trash-o\">");
                 EndContext();

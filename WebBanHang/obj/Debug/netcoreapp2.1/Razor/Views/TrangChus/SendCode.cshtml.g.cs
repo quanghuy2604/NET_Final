@@ -70,7 +70,7 @@ using WebBanHang.Models;
                 ");
             EndContext();
             BeginContext(350, 227, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91ce5407e2794eaa8107621b764e5509", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "402080eb5d684f4a9f57a85a14d6439e", async() => {
                 BeginContext(392, 178, true);
                 WriteLiteral("\r\n                    <div class=\"form-group\">\r\n                        <input type=\"submit\" value=\"Send\" class=\"btn btn-default\" />\r\n                    </div>\r\n                ");
                 EndContext();

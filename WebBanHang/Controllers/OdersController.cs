@@ -48,18 +48,20 @@ namespace WebBanHang.Controllers
         
 
         [AllowAnonymous]
-        public async Task<IActionResult> Details(long? id ,string ren)
+        public async Task<IActionResult> Details(long? id)
         {
             var model = _context.loais.ToList();
             ViewBag.model = model;
-            if (ren == "Admin")
-            {
-                ViewBag.ren = "~/Views/Shared/Components/_AdminPage.cshtml";
-            }
-            else
+
+            if (User.Identity.Name != admin)
             {
                 ViewBag.ren = "~/Views/Shared/Layout_Sanpham.cshtml";
             }
+            else if (User.Identity.Name == admin)
+            {
+                 ViewBag.ren = "~/Views/Shared/Components/_AdminPage.cshtml";
+            }
+
             if (id == null)
             {
                 return NotFound();

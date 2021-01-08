@@ -129,7 +129,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral("\r\n                    </td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(1085, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "83e14f3e349b484aa31c8cdd4c2cc351", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "01ced12b56074c4d9c8791197581f361", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -166,7 +166,7 @@ AddHtmlAttributeValue("", 1102, item.Hinh, 1102, 10, false);
             WriteLiteral("\r\n                    </td>\r\n                    <td style=\'font-size:24px\'>\r\n                        ");
             EndContext();
             BeginContext(1370, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48e78b7b26784bfd9574031589480b2e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "979f9a1ace3244fd91aefe329ab4b294", async() => {
                 BeginContext(1415, 22, true);
                 WriteLiteral("<i class=\"fa fa-edit\">");
                 EndContext();
@@ -201,7 +201,7 @@ AddHtmlAttributeValue("", 1102, item.Hinh, 1102, 10, false);
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(1469, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7560bf842718403190d50d9b7ac0daa6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1f4a0a69c374dd9a6334069fced20e3", async() => {
                 BeginContext(1517, 28, true);
                 WriteLiteral("<i class=\"fa fa-align-left\">");
                 EndContext();
@@ -236,7 +236,7 @@ AddHtmlAttributeValue("", 1102, item.Hinh, 1102, 10, false);
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(1577, 76, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a46c0c0811b4627a9f020a0067e173a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8a558b45f814d449d69b5dd82c2ee6c", async() => {
                 BeginContext(1624, 25, true);
                 WriteLiteral("<i class=\"fa fa-trash-o\">");
                 EndContext();
