@@ -22,12 +22,10 @@
                             <a asp-action="Details" asp-controller="TrangChus" asp-route-mahh="@item.MaHH"> <img style="margin:auto" src="~/Hinh/@item.Hinh" width="250" height="250" alt="Just imported @item.TenHH" /></a>
                         </div>
 
-                        <div>
-                            <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span style="font-size:24px" class="glyphicon glyphicon-shopping-cart"></span>Buy</a>                          
-                        </div>
+                        
                         <div class="caption">
                             <div class="name"><h3><a>  @Html.DisplayFor(modelItem => item.TenHH)</a></h3></div>
-                            <div><strong> @item.DonGia</strong> $</div>
+                            <div style="font-size:16px"><strong> @item.DonGia</strong> $</div>
                         </div>
                     </div>
                 </div>
@@ -52,13 +50,9 @@
                         <div class="image">
                             <a asp-action="Details" asp-controller="TrangChus" asp-route-mahh="@item.MaHH"> <img style="margin:auto" src="~/Hinh/@item.Hinh" width="250" height="250" alt="Best seller @item.TenHH" /></a>
                         </div>
-                        <div >
-                            <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span style="font-size:24px" class="glyphicon glyphicon-shopping-cart">Buy</span></a>
-                            
-                        </div>
                         <div class="caption">
                             <div class="name"><h3><a> @item.TenHH</a></h3></div>
-                            <div><strong> @item.DonGia</strong>$</div>
+                            <div style="font-size:16px"><strong> @item.DonGia</strong>$</div>
                         </div>
                     </div>
                 </div>
@@ -80,12 +74,9 @@
                         <div class="image">
                             <a asp-action="Details" asp-controller="TrangChus" asp-route-mahh="@item.MaHH"> <img src="~/Hinh/@item.Hinh" width="250" height="250" alt="Hot product @item.TenHH" /></a>
                         </div>
-                        <div >
-                            <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span style="font-size:24px" class="glyphicon glyphicon-shopping-cart"></span>Buy</a>
-                        </div>
                         <div class="caption">
                             <div class="name"><h3><a>  @item.TenHH</a></h3></div>
-                            <div ><strong> @item.DonGia</strong>$</div>
+                            <div style="font-size:16px"><strong> @item.DonGia</strong>$</div>
                         </div>
                     </div>
                 </div>

@@ -496,3 +496,4 @@ C:\Users\TN\Documents\NET_34\WebBanHang\obj\Debug\netcoreapp2.1\WebBanHang.cspro
 C:\Users\TN\Documents\NET_34\WebBanHang\obj\Debug\netcoreapp2.1\Razor\Views\Oders\Customerhistory.cshtml.g.cs
 C:\Users\TN\Documents\NET_34\WebBanHang\obj\Debug\netcoreapp2.1\Razor\Views\Oders\Orderdetailhistory.cshtml.g.cs
 C:\Users\TN\Documents\NET_34\WebBanHang\obj\Debug\netcoreapp2.1\Razor\Views\Oders\OrderHistory.cshtml.g.cs
+C:\Users\TN\Documents\NET_34\WebBanHang\obj\Debug\netcoreapp2.1\Razor\Views\Oders\HistoryCus.cshtml.g.cs

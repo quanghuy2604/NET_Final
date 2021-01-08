@@ -483,7 +483,7 @@ namespace WebBanHang.Controllers
                 }
             }
             
-            return View(user);
+            return RedirectToAction("Login");
         }
         [HttpGet]
         [AllowAnonymous]

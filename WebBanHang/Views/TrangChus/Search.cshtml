@@ -28,12 +28,10 @@
                                 </div>
 
 
-                                <div>
-                                    <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span class="glyphicon glyphicon-shopping-cart">Add to cart</span></a>
-                                </div>
+
                                 <div class="caption">
                                     <div class="name"><h3 style="font-size:16px"><a>  @Html.DisplayFor(modelItem => item.TenHH)</a></h3></div>
-                                    <div>@Html.DisplayFor(modelItem => item.DonGia) $<span>@Html.DisplayFor(modelItem => item.GiamGia) %</span></div>
+                                    <div style="font-size:20px"><strong>@Html.DisplayFor(modelItem => item.DonGia) $</div>
 
                                 </div>
 

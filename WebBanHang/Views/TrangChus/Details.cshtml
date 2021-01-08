@@ -20,30 +20,30 @@
         </div>
         <div class="row">
             <div id="main-content" class="col-md-8">
+                <div class="row">
                 <div class="product">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="image">
-                            <img src="~/Hinh/@Model.Hinh" width="300" height="300" alt="Details of @Model.TenHH"/>
+                            <img src="~/Hinh/@Model.Hinh" width="600" height="600" alt="Details of @Model.TenHH"/>
 
                         </div>
                     </div>
-                    <div class="col-md-6">
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="caption">
                             <div class="name"><h3>@Html.DisplayFor(modelItem => Model.TenHH)</h3></div>
+                            <strong>
                             <div class="info">
                                 <ul>
                                     <li>Brand: @Html.DisplayFor(modelItem => Model.Loai.TenLoai)</li>
                                 </ul>
                             </div>
-                            <div >@(Html.DisplayFor(modelItem => Model.DonGia)) $<span>@Html.DisplayFor(modelItem => Model.GiamGia)%</span></div>
-                            <div class="options">
-                                Choice options
-                                <select>
-                                    <option value="" selected>----Options----</option>
-                                    <option value="white">White</option>
-                                    <option value="black">Black</option>
-                                </select>
+                            <div>Prize : @(Html.DisplayFor(modelItem => Model.DonGia)) $
+                                <div>Discount : @Html.DisplayFor(modelItem => Model.GiamGia) %</div>
                             </div>
+                            </strong>
                             <div class="well">
                                 <label>Amount: </label>
                                 <form asp-action="buy-detail" asp-controller="cart" asp-route-id="@Model.MaHH">
@@ -51,29 +51,12 @@
                                     <button type="submit" class="btn btn-success">Add to cart</button>
                                 </form>
                             </div>
-                            <div class="share well">
-                                <strong style="margin-right: 13px;">Share :</strong>
-                                <a href="#" class="share-btn" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <script>
-                                    function fbs_click() {
-                                        u = location.href; t = document.title; window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436');
-                                        return false;
-                                    }
-                                </script>
-                                <a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" class="share-btn" target="_blank">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-
-                                <a href="#" class="share-btn" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </div>
+                            
                         </div>
                     </div>
-                    <div class="clear"></div>
                 </div>
+
+               
                 <div class="product-desc">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#description">Description</a></li>
@@ -114,18 +97,16 @@
                         @foreach (var item in ViewBag.loai2s)
                         {
                             <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="product">
+                                <div class="product" style="height:300px;width:220px">
                                     <div >
                                         <a asp-action="Details" asp-route-mahh="@item.MaHH"> <img src="~/Hinh/@item.Hinh" width="200" height="200" alt="Related products @item.TenHH"/></a>
                                     </div>
 
 
-                                    <div>
-                                        <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span class="glyphicon glyphicon-shopping-cart">Add to cart</span></a>
-                                    </div>
+
                                     <div class="caption">
                                         <div class="name"><h3><a>@item.TenHH</a></h3></div>
-                                        <div >@item.DonGia $<span>@Html.DisplayFor(modelItem => Model.GiamGia)%</span></div>
+                                        <div style="font-size:20px">@item.DonGia $</div>
                                     </div>
                                 </div>
                             </div>
@@ -167,12 +148,7 @@
 
                             @foreach (var item in ViewBag.loai4s)
                             {
-
-
                                 <li> <a asp-action="XemBaiViet" asp-route-id="@item.ID" asp-route-id2="@item.MaLoai"> @item.TieuDe</a></li>
-
-
-
                             }
 
                         </ul>
@@ -187,18 +163,15 @@
                             @foreach (var item in ViewBag.loai3s)
                             {
 
-                                <div class="image">
-                                    <a asp-action="Details" asp-route-mahh="@item.MaHH"> <img src="~/Hinh/@item.Hinh" width="150" height="150" alt="Sản phẩm cũ @item.TenHH"/></a>
-                                </div>
-
-
-                                <div >
-                                    <a class="btn btn-success" asp-action="buy" asp-controller="cart" asp-route-id="@item.MaHH"><span class="glyphicon glyphicon-shopping-cart"></span>Add to cart</a>
+                            <div class="product" >
+                                <div>
+                                    <a asp-action="Details" asp-route-mahh="@item.MaHH"> <img src="~/Hinh/@item.Hinh" width="200" height="200" alt="Related products @item.TenHH" /></a>
                                 </div>
                                 <div class="caption">
                                     <div class="name"><h3><a>@item.TenHH</a></h3></div>
-                                    <div >@item.DonGia $<span>@item.GiamGia%</span></div>
+                                    <div style="font-size:20px">@item.DonGia $</div>
                                 </div>
+                            </div>
                             }
                         </div>
 
