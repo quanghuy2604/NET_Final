@@ -57,6 +57,15 @@ namespace WebBanHang.Controllers
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
+            var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                ViewBag.quantity = 0;
+            }
+            else
+            {
+                ViewBag.quantity = cart.Sum(item => item.Quantity);
+            }
             if (!User.Identity.IsAuthenticated)
             {
                 return RedirectToAction("Index", "TrangChus");

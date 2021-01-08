@@ -6,19 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20191214113321_AddDB.cs" />
-    <Compile Remove="Migrations\20191214113321_AddDB.Designer.cs" />
-    <Compile Remove="Migrations\20191214133245_init.cs" />
-    <Compile Remove="Migrations\20191214133245_init.Designer.cs" />
-    <Compile Remove="Migrations\20191217140143_AddVal.cs" />
-    <Compile Remove="Migrations\20191217140143_AddVal.Designer.cs" />
-    <Compile Remove="Migrations\20201105095717_IdentityDatabase.cs" />
-    <Compile Remove="Migrations\20201105095717_IdentityDatabase.Designer.cs" />
-    <Compile Remove="Migrations\20201112142147_Database.cs" />
-    <Compile Remove="Migrations\20201112142147_Database.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="jQuery.Validation" Version="1.19.1" />
     <PackageReference Include="MailChimp.Net.V3" Version="4.2.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />

@@ -41,27 +41,12 @@ namespace WebBanHang.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
-                    Password = table.Column<string>(nullable: false)
+                    Password = table.Column<string>(nullable: false),
+                    Address = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "BaiViet",
-                columns: table => new
-                {
-                    ID = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    TieuDe = table.Column<string>(nullable: true),
-                    NoiDung = table.Column<string>(nullable: true),
-                    Hinh = table.Column<string>(nullable: true),
-                    MaLoai = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_BaiViet", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -247,6 +232,28 @@ namespace WebBanHang.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "BaiViet",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    TieuDe = table.Column<string>(nullable: true),
+                    NoiDung = table.Column<string>(nullable: true),
+                    Hinh = table.Column<string>(nullable: true),
+                    MaLoai = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BaiViet", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_BaiViet_Loai_MaLoai",
+                        column: x => x.MaLoai,
+                        principalTable: "Loai",
+                        principalColumn: "MaLoai",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "HangHoa",
                 columns: table => new
                 {
@@ -288,6 +295,12 @@ namespace WebBanHang.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_OderDetail", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_OderDetail_HangHoa_MaHH",
+                        column: x => x.MaHH,
+                        principalTable: "HangHoa",
+                        principalColumn: "MaHH",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_OderDetail_Oder_OderID",
                         column: x => x.OderID,
@@ -336,9 +349,19 @@ namespace WebBanHang.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_BaiViet_MaLoai",
+                table: "BaiViet",
+                column: "MaLoai");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_HangHoa_MaLoai",
                 table: "HangHoa",
                 column: "MaLoai");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OderDetail_MaHH",
+                table: "OderDetail",
+                column: "MaHH");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OderDetail_OderID",
@@ -370,9 +393,6 @@ namespace WebBanHang.Migrations
                 name: "Contact");
 
             migrationBuilder.DropTable(
-                name: "HangHoa");
-
-            migrationBuilder.DropTable(
                 name: "OderDetail");
 
             migrationBuilder.DropTable(
@@ -388,10 +408,13 @@ namespace WebBanHang.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Loai");
+                name: "HangHoa");
 
             migrationBuilder.DropTable(
                 name: "Oder");
+
+            migrationBuilder.DropTable(
+                name: "Loai");
         }
     }
 }

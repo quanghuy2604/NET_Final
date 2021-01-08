@@ -10,14 +10,14 @@ using WebBanHang.Models;
 namespace WebBanHang.Migrations
 {
     [DbContext(typeof(MyDBContext))]
-    [Migration("20201112153414_Database")]
+    [Migration("20210108130209_Database")]
     partial class Database
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
+                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -161,6 +161,8 @@ namespace WebBanHang.Migrations
 
                     b.Property<string>("PasswordHash");
 
+                    b.Property<string>("Address");
+
                     b.Property<string>("PhoneNumber");
 
                     b.Property<bool>("PhoneNumberConfirmed");
@@ -200,6 +202,8 @@ namespace WebBanHang.Migrations
                     b.Property<string>("TieuDe");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("MaLoai");
 
                     b.ToTable("BaiViet");
                 });
@@ -314,6 +318,8 @@ namespace WebBanHang.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("MaHH");
+
                     b.HasIndex("OderID");
 
                     b.ToTable("OderDetail");
@@ -393,6 +399,14 @@ namespace WebBanHang.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("WebBanHang.Models.BaiViet", b =>
+                {
+                    b.HasOne("WebBanHang.Models.Loai", "loai")
+                        .WithMany()
+                        .HasForeignKey("MaLoai")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("WebBanHang.Models.HangHoa", b =>
                 {
                     b.HasOne("WebBanHang.Models.Loai", "Loai")
@@ -403,6 +417,11 @@ namespace WebBanHang.Migrations
 
             modelBuilder.Entity("WebBanHang.Models.OderDetail", b =>
                 {
+                    b.HasOne("WebBanHang.Models.HangHoa", "hangHoa")
+                        .WithMany()
+                        .HasForeignKey("MaHH")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("WebBanHang.Models.Oder", "oder")
                         .WithMany()
                         .HasForeignKey("OderID")

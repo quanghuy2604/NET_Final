@@ -65,7 +65,7 @@ using WebBanHang.Models;
             WriteLiteral("<h3>");
             EndContext();
             BeginContext(109, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8954dbe670948c489e1bab9e9a52551", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb1eaba0e0d54afeb7ad3d14ff5f52ef", async() => {
                 BeginContext(159, 6, true);
                 WriteLiteral("Search");
                 EndContext();

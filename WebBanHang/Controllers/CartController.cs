@@ -414,12 +414,13 @@ namespace WebBanHang.Controllers
             };
             
             #region Insert Order to Database
+
             var oder = new Oder();
             oder.ID = paypalOrderId;
-            oder.ShipAddress = "Paypal User";
-            oder.ShipName = "Paypal User";
-            oder.ShipMobile = "Paypal User";
-            oder.ShipEmail = "Paypal User";
+            oder.ShipAddress = "123 Hoang Hoa Tham";
+            oder.ShipName = user.UserName;
+            oder.ShipMobile = user.PhoneNumber;
+            oder.ShipEmail = user.Email;
             oder.CheckOutType = "Paypal";
             oder.CustomerID = user.Id;
             oder.CreatedDate = DateTime.Now;
@@ -557,10 +558,10 @@ namespace WebBanHang.Controllers
 
             var oder = new Oder();
             oder.ID = DateTime.Now.Ticks;
-            oder.ShipName = "VNPay User";
-            oder.ShipMobile = "VNPay User";
-            oder.ShipAddress = "VNPay User";
-            oder.ShipEmail = "VNPay User";
+            oder.ShipName = user.UserName;
+            oder.ShipMobile = user.PhoneNumber;
+            oder.ShipAddress = "25 Hoa Ngu";
+            oder.ShipEmail = user.Email;
             oder.CustomerID = user.Id;
             oder.CreatedDate = DateTime.Now;
             oder.CheckOutType = "VNPay";

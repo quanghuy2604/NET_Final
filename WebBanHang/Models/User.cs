@@ -23,9 +23,14 @@ namespace WebBanHang.Models
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         public string Password { get; set; }
 
+        [Required]
         [Display(Name = "Phone number")]
         [Phone]
         public string PhoneNumber { get; set; }
+
+        [Required]
+        [Display(Name = "Address")]
+        public string Address { get; set; }
 
         [Display(Name = "Two Factor Authentication")]
         public bool Enable2FA { get; set; }
