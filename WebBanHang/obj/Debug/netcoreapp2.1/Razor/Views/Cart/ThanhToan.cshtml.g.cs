@@ -96,7 +96,7 @@ Write(ViewData["Message"]);
             WriteLiteral("<div class=\"container\">\r\n    <div class=\"heading\"><h2>Payment Information</h2></div>\r\n    ");
             EndContext();
             BeginContext(293, 1438, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf752b2704b74b9ea0092dd125b49154", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2d23d30c2d247b3804caf5e8ea8a1c4", async() => {
                 BeginContext(357, 352, true);
                 WriteLiteral(@"
         <div class=""form-group"">
@@ -130,7 +130,7 @@ Write(ViewData["Message"]);
                 WriteLiteral("                ");
                 EndContext();
                 BeginContext(829, 119, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c7a1c2fde2245679decd6dab139edcb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42504f3ff8dd4c5c8ef81d5cf63e7a4d", async() => {
                     BeginContext(921, 23, true);
                     WriteLiteral("[Go to Manage Acccount]");
                     EndContext();
@@ -182,12 +182,12 @@ Write(ViewData["Message"]);
             ");
                 EndContext();
                 BeginContext(1314, 137, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9eb87070fc94244af52737a2eb0dd3a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e006a37fce6427782accc7464f67089", async() => {
                     BeginContext(1345, 18, true);
                     WriteLiteral("\r\n                ");
                     EndContext();
                     BeginContext(1363, 70, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "298a7d5dc12f45079790915c82fe173f", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "798ac1da6fbf44b7ae8317542cd1bc29", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -224,7 +224,7 @@ Write(ViewData["Message"]);
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1465, 189, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a02cd10740e4ba19735820844de33eb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8ff10c02c7e459cad090b8619bf7187", async() => {
                     BeginContext(1497, 153, true);
                     WriteLiteral("\r\n                <img src=\"https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png\" alt=\"Check out with PayPal\" />\r\n            ");
                     EndContext();

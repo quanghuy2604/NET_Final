@@ -68,7 +68,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(230, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90833c7379914d86a9391b42c9fd2ee4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c5eb6fb003c46a786a0d0705d0edec6", async() => {
                 BeginContext(253, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -138,7 +138,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(852, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76687d48e74042aa8855cba3567fcc25", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed261f11b84b4c948536d80402d311ba", async() => {
                 BeginContext(897, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -173,7 +173,7 @@ using WebBanHang.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(925, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c464375a5d3d462e8fa985869e6817a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "585575823cf4474dae02a0c005c8534a", async() => {
                 BeginContext(973, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -208,7 +208,7 @@ using WebBanHang.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1004, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc15851533f94ad8890edbe273a35ad3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cec0e58dd674dbcb2d340ae15087f33", async() => {
                 BeginContext(1051, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

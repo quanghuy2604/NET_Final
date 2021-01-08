@@ -79,7 +79,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
             EndContext();
             BeginContext(391, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d5c4d78cc4e743aaa8b502be3340bd16", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "20643889ef7f4a4a9e2f1b3eaedeb795", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -166,7 +166,7 @@ AddHtmlAttributeValue("", 408, Model.Hinh, 408, 11, false);
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1007, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f8c0ca7b190443d8718ef446596e1c4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb2431f86889486d9bffc61cbd5c5d58", async() => {
                 BeginContext(1053, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -201,7 +201,7 @@ AddHtmlAttributeValue("", 408, Model.Hinh, 408, 11, false);
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1069, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72b8e53972154b92a37709ff8eaf157b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0b00d8092db45d2b39f4b257a3accfb", async() => {
                 BeginContext(1091, 12, true);
                 WriteLiteral("Back to Blog");
                 EndContext();
