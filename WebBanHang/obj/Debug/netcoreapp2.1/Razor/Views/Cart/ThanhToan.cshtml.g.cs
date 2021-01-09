@@ -96,7 +96,7 @@ Write(ViewData["Message"]);
             WriteLiteral("    <div class=\"container\">\r\n        <div class=\"heading\"><h2>Payment Information</h2></div>\r\n        ");
             EndContext();
             BeginContext(337, 1639, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1852dd5ae6c4fe49ddf67e3166572ae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ed6a87906b14a85a4e08ea302d6b054", async() => {
                 BeginContext(401, 99, true);
                 WriteLiteral("\r\n            <div class=\"form-group\">\r\n                <input name=\"shipName\" class=\"form-control\"");
                 EndContext();
@@ -156,12 +156,12 @@ WriteAttributeValue("", 1030, ViewBag.phoneNumber, 1030, 20, false);
                 ");
                 EndContext();
                 BeginContext(1534, 130, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22ccf16e7a8b42dbaba88ea6dad58e61", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30084fde4f144a75a7e7c868d9283151", async() => {
                     BeginContext(1565, 22, true);
                     WriteLiteral("\r\n                    ");
                     EndContext();
                     BeginContext(1587, 55, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "76e42944013e48f1880bfe047175bbbc", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "17beb56c115544d9bb1a59dd8ce12c1c", async() => {
                     }
                     );
                     __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -198,7 +198,7 @@ WriteAttributeValue("", 1030, ViewBag.phoneNumber, 1030, 20, false);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1682, 197, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e37c4cb6999c4150abe8ffc9365e305f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86524271cd1140d39d3016edbd0b5552", async() => {
                     BeginContext(1714, 161, true);
                     WriteLiteral("\r\n                    <img src=\"https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png\" alt=\"Check out with PayPal\" />\r\n                ");
                     EndContext();
