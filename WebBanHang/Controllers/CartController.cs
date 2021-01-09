@@ -242,12 +242,15 @@ namespace WebBanHang.Controllers
         }
 
         #region Normal Checkout
-        [HttpGet, Authorize]
+        [HttpGet, AllowAnonymous]
         [Route("thanh-toan")]
         public async Task<IActionResult> ThanhToan()
         {
             var model = _context.loais.ToList();
             ViewBag.model = model;
+
+            
+
             var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
             if (cart == null)
             {
@@ -258,12 +261,16 @@ namespace WebBanHang.Controllers
                 ViewBag.cart = cart;
             }
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            ViewBag.username = user.UserName;
+            ViewBag.address = user.Address;
+            ViewBag.Email = user.Email;
+            ViewBag.IDcustomer = user.Id;
             ViewBag.PhoneNumber = user.PhoneNumber;
             ViewBag.total = cart.Sum(item => item.Product.DonGia * item.Quantity);
             return View();
         }
 
-        [HttpPost, Authorize]
+        [HttpPost, AllowAnonymous]
         [Route("thanh-toan")]
         public async Task<IActionResult> ThanhToan(string shipName, string address)
         {
@@ -722,6 +729,8 @@ namespace WebBanHang.Controllers
             {
                 return NotFound();
             }
+
+            
 
             oder.Status = true;
             _context.Update(oder);
