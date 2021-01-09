@@ -86,6 +86,56 @@ namespace WebBanHang.Controllers
             return View(result);
         }
 
+        //Address
+        public async Task<IActionResult> Address()
+        {
+            var modelLoai = _context.loais.ToList();
+            ViewBag.model = modelLoai;
+
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            ViewBag.Address = user.Address;
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Address(AddressViewModel model)
+        {
+            var modelLoai = _context.loais.ToList();
+            ViewBag.model = modelLoai;
+
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByNameAsync(User.Identity.Name);
+                if (user != null)
+                {
+                    ViewBag.Address = user.Address;
+                    user.Address = model.Street.ToString() +",  "+ model.Ward.ToString() + " Wards, "+ model.District.ToString() + " District, "+ model.Provincial.ToString()+ " City";
+
+                    var result = await _userManager.UpdateAsync(user);
+                    if (result.Succeeded)
+                    {
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction(nameof(ManageAccount));
+                    }
+                    else
+                    {
+                        foreach (IdentityError error in result.Errors)
+                            ModelState.AddModelError("", error.Description);
+
+                    }
+                    return View(model);
+                }
+            }
+
+            return RedirectToAction(nameof(ManageAccount));
+        }
+
+
         public IActionResult AddPhoneNumber()
         {
             var modelLoai = _context.loais.ToList();

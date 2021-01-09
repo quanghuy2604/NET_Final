@@ -285,7 +285,7 @@ namespace WebBanHang.Controllers
             oder.CreatedDate = DateTime.Now;
             oder.CustomerID = user.Id;
             oder.ShipName = shipName;
-            oder.ShipAddress = address;
+            oder.ShipAddress = user.Address;
             oder.ShipMobile = user.PhoneNumber;
             oder.ShipEmail = user.Email;
             oder.CheckOutType = "Normal";
@@ -417,7 +417,7 @@ namespace WebBanHang.Controllers
 
             var oder = new Oder();
             oder.ID = paypalOrderId;
-            oder.ShipAddress = "123 Hoang Hoa Tham";
+            oder.ShipAddress = user.Address;
             oder.ShipName = user.UserName;
             oder.ShipMobile = user.PhoneNumber;
             oder.ShipEmail = user.Email;
@@ -560,7 +560,7 @@ namespace WebBanHang.Controllers
             oder.ID = DateTime.Now.Ticks;
             oder.ShipName = user.UserName;
             oder.ShipMobile = user.PhoneNumber;
-            oder.ShipAddress = "25 Hoa Ngu";
+            oder.ShipAddress = user.Address;
             oder.ShipEmail = user.Email;
             oder.CustomerID = user.Id;
             oder.CreatedDate = DateTime.Now;

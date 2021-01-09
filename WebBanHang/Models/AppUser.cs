@@ -12,7 +12,6 @@ namespace WebBanHang.Models
         [Required]
         public string Password { get; set; }
 
-        [Required]
         public string Address { get; set; }
 
     }

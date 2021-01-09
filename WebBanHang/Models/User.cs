@@ -28,11 +28,11 @@ namespace WebBanHang.Models
         [Phone]
         public string PhoneNumber { get; set; }
 
-        [Required]
-        [Display(Name = "Address")]
-        public string Address { get; set; }
 
         [Display(Name = "Two Factor Authentication")]
         public bool Enable2FA { get; set; }
+
+        [Display(Name = "Address")]
+        public string Address { get; set; }
     }
 }

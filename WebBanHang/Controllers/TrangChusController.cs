@@ -441,6 +441,7 @@ namespace WebBanHang.Controllers
             return RedirectToAction("Login");
         }
 
+
         public IActionResult Create()
         {
             var model = _context.loais.ToList();
@@ -448,22 +449,20 @@ namespace WebBanHang.Controllers
             return View();
         }
 
-        // POST: TaiKhoans/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserName,Email,Password,PhoneNumber,Enable2FA")] User user)
+        public async Task<IActionResult> Create([Bind("Id,UserName,Email,Password,PhoneNumber,Enable2FA,Address")] User user)
         {
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
-            if (ModelState.IsValid)
+            if (true)
             {
-                var _user = new AppUser { UserName = user.UserName, Email = user.Email, Password = user.Password };
+                var _user = new AppUser { UserName = user.UserName, Email = user.Email, Password = user.Password, Address = "" };
                 var check = await _userManager.FindByEmailAsync(_user.Email);
-
-                if(check == null)
+                Console.Write(check);
+                if (check == null)
                 {
                     var result = await _userManager.CreateAsync(_user, user.Password);
                     if (result.Succeeded)
@@ -482,8 +481,8 @@ namespace WebBanHang.Controllers
                     ModelState.AddModelError("", "Email already exist");
                 }
             }
-            
-            return RedirectToAction("Login");
+
+            return View(user);
         }
         [HttpGet]
         [AllowAnonymous]
