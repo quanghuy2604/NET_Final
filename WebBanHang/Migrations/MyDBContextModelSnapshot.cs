@@ -136,6 +136,9 @@ namespace WebBanHang.Migrations
 
                     b.Property<int>("AccessFailedCount");
 
+                    b.Property<string>("Address")
+                        .IsRequired();
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
 
@@ -160,7 +163,6 @@ namespace WebBanHang.Migrations
                     b.Property<string>("PasswordHash");
 
                     b.Property<string>("PhoneNumber");
-                    b.Property<string>("Address");
 
                     b.Property<bool>("PhoneNumberConfirmed");
 

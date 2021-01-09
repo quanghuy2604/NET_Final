@@ -42,7 +42,7 @@ namespace WebBanHang.Migrations
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
                     Password = table.Column<string>(nullable: false),
-                    Address = table.Column<string>(nullable: true)
+                    Address = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
