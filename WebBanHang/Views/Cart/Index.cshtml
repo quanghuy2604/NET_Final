@@ -33,12 +33,13 @@
                                         <a asp-action="remove" asp-controller="cart" asp-route-id="@item.Product.MaHH" class="btn btn-danger">Remove</a>
                                     </div>
                                 </div>
-                                <div class="clear"></div>
+
                             </div>
                         </div>
                     }
 
                 }
+                <div ><a class="btn btn-danger" onclick="return confirm('Are you sure about that :))) ')" asp-action="DeleteAll" asp-controller="cart">Remove all item</a></div>
             </div>
             <div class="col-sm-4">
                 <div class="product well">

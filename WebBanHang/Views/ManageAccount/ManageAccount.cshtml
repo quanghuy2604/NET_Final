@@ -8,49 +8,61 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div class="heading"><h1>Hi, @Model.UserName</h1></div>
+                <div class="heading">
+                <img style=" border-radius: 50%;" src="~/img/25.jpg" alt="Paris" width="150" height="150" />
+                <h1>Hi, @Model.UserName</h1></div>
                 <div class="container-fluid" style="font-size:24px">
-                    <div><strong>User name</strong> : @Model.UserName </div>
-                    <br />
-                    <div>
-                        <strong> Email</strong> : @Html.DisplayFor(model => model.Email)
-                        <a asp-controller="ManageAccount" asp-action="ChangeEmail" class="btn btn-warning">Change</a>
-                    </div>
-                    <br />
-                    <div>
-                        <strong>Address: </strong> @Html.DisplayFor(model => model.Address)
-                        <a asp-controller="ManageAccount" asp-action="Address" class="btn btn-warning">Change</a>
-                    </div>
-                    <br />
-                    <div>
-                        <strong>Password: </strong> @Html.DisplayFor(model => model.Password)
-                        <a asp-controller="ManageAccount" asp-action="ChangePassword" class="btn btn-warning">Change</a>
-                    </div>
-                    <br />
-                    <div>
+                    <div class="row">
+                        
+                        <div class="row"><div class="col-md-12"><strong>User name</strong> : @Model.UserName</div> </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6"><strong> Email</strong> : @Html.DisplayFor(model => model.Email)</div>
+                            <div class="col-md-6"><a asp-controller="ManageAccount" asp-action="ChangeEmail" class="btn btn-warning">Change</a></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6"><strong>Address: </strong> @Html.DisplayFor(model => model.Address)</div>
+                            <div class="col-md-6"><a asp-controller="ManageAccount" asp-action="Address" class="btn btn-warning">Change</a></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6"><strong>Password: </strong> @Html.DisplayFor(model => model.Password)</div>
+                            <div class="col-md-6"><a asp-controller="ManageAccount" asp-action="ChangePassword" class="btn btn-warning">Change</a></div>
 
 
-                        @if (Model.PhoneNumber != null)
-                        {
+                        </div>
+                        <hr />
+                        <div class="row">
 
-                            <form asp-controller="ManageAccount" asp-action="RemovePhoneNumber" method="post">
-                                <strong>Phone Number: </strong> @Model.PhoneNumber
-                                <a asp-controller="ManageAccount" asp-action="AddPhoneNumber" class="btn btn-warning">Change</a>
-                                <button type="submit" class="btn btn-danger">Remove</button>
-                            </form>
-                        }
-                        else
-                        {
-                            <strong>Phone Number: </strong>
-                            <a asp-controller="ManageAccount" asp-action="AddPhoneNumber" class="btn btn-success">Add phone number</a>
-                        }
+
+
+                            @if (Model.PhoneNumber != null)
+                            {
+
+                                <form asp-controller="ManageAccount" asp-action="RemovePhoneNumber" method="post">
+                                    <div class="col-md-6"><strong>Phone Number: </strong> @Model.PhoneNumber</div>
+                                    <div class="col-md-6">
+                                        <a asp-controller="ManageAccount" asp-action="AddPhoneNumber" class="btn btn-warning">Change</a>
+                                        <button type="submit" class="btn btn-danger">Remove</button>
+                                    </div>
+                                </form>
+                            }
+                            else
+                            {
+                                <div class="col-md-6"><strong>Phone Number: </strong></div>
+                                <div class="col-md-6"><a asp-controller="ManageAccount" asp-action="AddPhoneNumber" class="btn btn-success">Add phone number</a></div>
+
+                            }
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-12"><strong>Ordered :</strong> <a asp-controller="Oders" asp-route-idcustomer="@Model.Id" asp-action="OrderHistory"> Order History</a></div>
+                        </div>
+
+
+
                     </div>
-
-                    <br />
-                    <div>
-                        <strong>Ordered :</strong> <a asp-controller="Oders" asp-route-idcustomer="@Model.Id" asp-action="OrderHistory"> Order History</a>
-                    </div>
-
                 </div>
 
             </div>

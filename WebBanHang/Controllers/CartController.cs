@@ -199,9 +199,11 @@ namespace WebBanHang.Controllers
 
             return RedirectToAction("Index");
         }
+        [Route("/index")]
         public IActionResult DeleteAll()
         {
             SessionHelper.Set(HttpContext.Session, "cart", "");
+            
             return RedirectToAction("Index");
         }
         public long Insert(Oder oder)
@@ -319,6 +321,7 @@ namespace WebBanHang.Controllers
                     
                    
                         hanghoas.DaMua += item.Quantity;
+                        hanghoas.SoLuong -= item.Quantity;
                         _context.Update(hanghoas);
                         _context.SaveChanges();
                    
@@ -333,7 +336,7 @@ namespace WebBanHang.Controllers
             oder.Status = true;
             _context.Update(oder);
             _context.SaveChanges();
-            SessionHelper.Set(HttpContext.Session, "cart", "");
+           
 
             return View("HoanThanh");
 
@@ -454,6 +457,7 @@ namespace WebBanHang.Controllers
                     var hanghoas = _context.HangHoas.Where(x => x.MaHH == item.Product.MaHH).First();
 
                     hanghoas.DaMua += item.Quantity;
+                    hanghoas.SoLuong -= item.Quantity;
                     _context.Update(hanghoas);
                     _context.SaveChanges();
                 }
@@ -536,7 +540,7 @@ namespace WebBanHang.Controllers
                     oder.Status = true;
                     _context.Update(oder);
                     _context.SaveChanges();
-                    SessionHelper.Set(HttpContext.Session, "cart", "");
+                    
 
                     return View();
                 }
@@ -593,6 +597,7 @@ namespace WebBanHang.Controllers
                     var hanghoas = _context.HangHoas.Where(x => x.MaHH == item.Product.MaHH).First();
 
                     hanghoas.DaMua += item.Quantity;
+                    hanghoas.SoLuong -= item.Quantity;
                     _context.Update(hanghoas);
                     _context.SaveChanges();
                 }
@@ -695,7 +700,7 @@ namespace WebBanHang.Controllers
                     ViewBag.KetQua = "Payment failed. An error occurred during processing.";
                 }
             }
-            SessionHelper.Set(HttpContext.Session, "cart", "");
+            
             return View();
         }
 
@@ -720,7 +725,7 @@ namespace WebBanHang.Controllers
             {
                 return NotFound();
             }
-            
+            SessionHelper.Set(HttpContext.Session, "cart", "");
             SessionHelper.Set(HttpContext.Session, "orderId", 0); 
 
             var oder = _context.Oders.SingleOrDefault(m => m.ID == _orderId);
@@ -736,7 +741,7 @@ namespace WebBanHang.Controllers
             _context.Update(oder);
             _context.SaveChanges();
 
-            SessionHelper.Set(HttpContext.Session, "cart", "");
+            
 
             return View();
         }
@@ -748,7 +753,6 @@ namespace WebBanHang.Controllers
             var model = _context.loais.ToList();
             ViewBag.model = model;
 
-            SessionHelper.Set(HttpContext.Session, "cart", "");
             SessionHelper.Set(HttpContext.Session, "orderId", 0);
 
             return View();

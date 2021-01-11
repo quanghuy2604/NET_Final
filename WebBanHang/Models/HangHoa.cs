@@ -25,8 +25,8 @@ namespace WebBanHang.Models
         [ForeignKey("MaLoai")]
         public int MaLoai { get; set; }
         public DateTime NgayDang { get; set; }
-        [Required(ErrorMessage = "Không để trống!")]
-        [Range(0, 100, ErrorMessage = "Giảm giá từ 0% đến 100% !")]
+        [Required(ErrorMessage = "Not Null")]
+        [Range(0, 100, ErrorMessage = "Discount form 0 to 100 persons")]
         public int GiamGia { get; set; }
         public Loai Loai { get; set; }
         public int DaMua { get; set; }

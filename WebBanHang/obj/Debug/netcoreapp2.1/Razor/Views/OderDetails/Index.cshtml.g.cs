@@ -161,7 +161,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral("\r\n                    </td>\r\n                    <td style=\'font-size:24px\'>\r\n                        ");
             EndContext();
             BeginContext(1410, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a87281133a2b46549a5ba870b81d0118", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5bb64e7922a545d4a227aecc19491270", async() => {
                 BeginContext(1455, 22, true);
                 WriteLiteral("<i class=\"fa fa-edit\">");
                 EndContext();
@@ -196,7 +196,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(1509, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "193322cbd3c649919e805d103ce25971", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85ceb5401d5447ac89c27991d9f3fced", async() => {
                 BeginContext(1557, 28, true);
                 WriteLiteral("<i class=\"fa fa-align-left\">");
                 EndContext();
@@ -231,7 +231,7 @@ Write(await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(1617, 76, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9d14b9dd1e341468f3c707e646020fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb1e4c9a55cb4aeb81b668c47547f43e", async() => {
                 BeginContext(1664, 25, true);
                 WriteLiteral("<i class=\"fa fa-trash-o\">");
                 EndContext();

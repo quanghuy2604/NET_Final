@@ -68,7 +68,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(108, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85a85b92e8d24b81a8650c1908631e1b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb68acd3463e4d21996a74249e7e5e9f", async() => {
                 BeginContext(114, 95, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Order Details</title>\r\n");
                 EndContext();
@@ -88,12 +88,12 @@ using WebBanHang.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(218, 1127, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f66b9b3973d04d2a99b474a8de5d6002", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3c03ccca44f45a797a5328f4aa37e7d", async() => {
                 BeginContext(224, 11, true);
                 WriteLiteral("\r\n<p>\r\n    ");
                 EndContext();
                 BeginContext(235, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b81bb1c42fc49b882bab1b3bf537a8c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18981f4c9fb34449a90d94406c230da7", async() => {
                     BeginContext(258, 10, true);
                     WriteLiteral("Create New");
                     EndContext();
@@ -183,7 +183,7 @@ using WebBanHang.Models;
                 WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
                 EndContext();
                 BeginContext(1054, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "caba9a77c4cb4165a2107d868885a11c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0904b6b40d684842a834f79675354cd7", async() => {
                     BeginContext(1103, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -218,7 +218,7 @@ using WebBanHang.Models;
                 WriteLiteral(" |\r\n                ");
                 EndContext();
                 BeginContext(1131, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4018fe8926f7407386aec70da2247dab", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fe5c6ec2759b4f77b310c4ad8f7716a6", async() => {
                     BeginContext(1183, 7, true);
                     WriteLiteral("Details");
                     EndContext();
@@ -253,7 +253,7 @@ using WebBanHang.Models;
                 WriteLiteral(" |\r\n                ");
                 EndContext();
                 BeginContext(1214, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f9a7f19baab482f806944c0dff10902", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1ba243bfa5a49eab1df39d9593b9556", async() => {
                     BeginContext(1265, 6, true);
                     WriteLiteral("Delete");
                     EndContext();
