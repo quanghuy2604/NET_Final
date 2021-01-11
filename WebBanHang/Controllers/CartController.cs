@@ -272,7 +272,7 @@ namespace WebBanHang.Controllers
 
         [HttpPost, AllowAnonymous]
         [Route("thanh-toan")]
-        public async Task<IActionResult> ThanhToan(string shipName, string address)
+        public async Task<IActionResult> ThanhToan(string shipName, string address, string phone)
         {
             var model = _context.loais.ToList();
             ViewBag.model = model;
@@ -282,7 +282,7 @@ namespace WebBanHang.Controllers
             if(user.PhoneNumber == null)
             {
                 ViewBag.NoPhoneNumber = "You dont have Phone Number. Pleave add your Phone Number in Manage Account.";
-                return View();
+                
             }
 
             var cart = SessionHelper.Get<List<Item>>(HttpContext.Session, "cart");
@@ -293,7 +293,7 @@ namespace WebBanHang.Controllers
             oder.CustomerID = user.Id;
             oder.ShipName = shipName;
             oder.ShipAddress = user.Address;
-            oder.ShipMobile = user.PhoneNumber;
+            oder.ShipMobile = phone;
             oder.ShipEmail = user.Email;
             oder.CheckOutType = "Normal";
 

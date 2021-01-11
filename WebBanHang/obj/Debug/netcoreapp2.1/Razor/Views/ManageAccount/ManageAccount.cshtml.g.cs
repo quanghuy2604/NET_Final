@@ -103,7 +103,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(667, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "138e0a3da5de45798f5d48b5fe3e421d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b6b29af2e09462383c6073a3a208023", async() => {
                 BeginContext(750, 6, true);
                 WriteLiteral("Change");
                 EndContext();
@@ -138,7 +138,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(962, 89, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e9c5a1269a64b368cb2f55a0c2c6225", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ee30ae7b6924cabbff6cbfbfa77520a", async() => {
                 BeginContext(1041, 6, true);
                 WriteLiteral("Change");
                 EndContext();
@@ -173,7 +173,7 @@ using WebBanHang.Models;
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(1255, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b21dde96fc04e97a20b7559c168785c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "489f85e315294eb98ab2f2e7298a5dd3", async() => {
                 BeginContext(1341, 6, true);
                 WriteLiteral("Change");
                 EndContext();
@@ -208,7 +208,7 @@ using WebBanHang.Models;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(1554, 427, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55bb2c3ea5d74937a896d1ace778d9e1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c59f07ff6cc44eb294163a90b62a9cb5", async() => {
                 BeginContext(1636, 66, true);
                 WriteLiteral("\r\n                                <strong>Phone Number: </strong> ");
                 EndContext();
@@ -223,7 +223,7 @@ using WebBanHang.Models;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1754, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "729631081d5044c2a03fff091cd46518", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d7484ba3e894d1495335f745f577422", async() => {
                     BeginContext(1840, 6, true);
                     WriteLiteral("Change");
                     EndContext();
@@ -281,7 +281,7 @@ using WebBanHang.Models;
             WriteLiteral("                            <strong>Phone Number: </strong>\r\n                            ");
             EndContext();
             BeginContext(2156, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f90b0ce4e6294670ac64439a933a4b54", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8ae6663cbd6469b8cde33575d1b0bc3", async() => {
                 BeginContext(2242, 16, true);
                 WriteLiteral("Add phone number");
                 EndContext();
@@ -314,7 +314,7 @@ using WebBanHang.Models;
             WriteLiteral("                    </div>\r\n\r\n                    <br />\r\n                    <div>\r\n                        <strong>Ordered :</strong> ");
             EndContext();
             BeginContext(2427, 103, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dffc38c826ce4b12a499f9db0605dfc2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6845a55b68b64303ba9627b750ae6db2", async() => {
                 BeginContext(2512, 14, true);
                 WriteLiteral(" Order History");
                 EndContext();
